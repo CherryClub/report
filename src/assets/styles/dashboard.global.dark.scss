@@ -1,0 +1,62 @@
+@charset 'UTF-8';
+
+.app-container.dashboard-container.dark {
+  .inner-wrapper {
+    .common-width {
+      .top-section {
+        background: url('~@/assets/images/top_bg_1.png') -16px -8px no-repeat;
+        .year {
+          background: url('~@/assets/images/report_year_1.png') no-repeat;
+          background-size: auto 100%;
+        }
+        .title {
+          background: url('~@/assets/images/top_h1_1.png') no-repeat;
+          background-size: auto 100%;
+        }
+        .report-info {
+          .bg-box {
+            &::before {
+              background: linear-gradient( 135deg, #FFFFFF 0%, #FFFFFF 100%);
+            }
+            &:after {
+              background: linear-gradient( 135deg, #FFFFFF 0%, #FFFFFF 100%);
+            }
+          }
+          .info-inner-wrapper {
+            .info-row {
+              .info-col {
+                color: white;
+              }
+            }
+          }
+        }
+      }
+      .bottom-section {
+        background: linear-gradient( 134deg, #4A5268 0%, #2D313D 100%);
+      }
+      .el-table {
+        background: #333745;
+        .el-table__body {
+          .el-table__row {
+            background: #333745;
+            .cell {
+              color:white;
+            }
+          }
+        }
+      }
+      .el-tabs {
+        .el-tabs__header {
+          .el-tabs__nav-wrap {
+            &::after {
+              background-color: #4C5368 !important;
+            }
+          }
+        }
+        .el-tabs__item {
+          color:white;
+        }
+      }
+    }
+  }
+}

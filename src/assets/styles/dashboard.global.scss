@@ -1,0 +1,167 @@
+@charset 'UTF-8';
+.app-container.dashboard-container {
+  background: #F5F4F9;
+  min-height: 100vh;
+  .inner-wrapper {
+    padding-top: 16px;
+    padding-bottom: 45px;
+    .common-width {
+      width: 1200px;
+      margin: 0 auto;
+      .top-section {
+        margin-bottom: 16px;
+        height: 476px;
+        padding: 36px 34px 42px;
+        box-sizing: border-box;
+        background: url('~@/assets/images/top_bg_1.png') -16px -8px no-repeat;
+        .year {
+          width: 150px;
+          height: 45px;
+          background: url('~@/assets/images/report_year_1.png') no-repeat;
+          background-size: auto 100%;
+        }
+        .title {
+          margin-top: 52px;
+          width: 558px;
+          height: 97px;
+          background: url('~@/assets/images/top_h1_1.png') no-repeat;
+          background-size: auto 100%;
+        }
+        .report-info {
+          margin-top: 52px;
+          position: relative;
+          width: 1120px;
+          height: 140px;
+          padding: 6px;
+          .bg-box {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            &::before {
+              display: block;
+              content:'';
+              position: absolute;
+              left: 0;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              background: linear-gradient( 135deg, #FFFFFF 0%, #FFFFFF 100%);
+              border-radius: 2px;
+              opacity: 0.54;
+              backdrop-filter: blur(21px);
+            }
+            &:after {
+              display: block;
+              content:'';
+              position: absolute;
+              left: 6px;
+              top: 6px;
+              bottom: 6px;
+              right: 6px;
+              background: linear-gradient( 135deg, #FFFFFF 0%, #FFFFFF 100%);
+              border-radius: 2px;
+              opacity: 0.8;
+              backdrop-filter: blur(0px);
+            }
+          }
+          .info-inner-wrapper {
+            position: absolute;
+            left: 6px;
+            top: 6px;
+            bottom: 6px;
+            right: 6px;
+            padding: 27px 34px;
+            height: 100%;
+            .info-row {
+              z-index: 999;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              &:last-of-type {
+                margin-top: 18px;
+              }
+              .info-col {
+                flex:1;
+                &-2 {
+                  flex:2;
+                }
+                display: flex;
+                height: 35px;
+                font-family: SourceHanSansSC, SourceHanSansSC;
+                font-weight: 400;
+                font-size: 24px;
+                color: #282828;
+                line-height: 35px;
+                text-align: left;
+                font-style: normal;
+              }
+            }
+          }
+        }
+      }
+      .bottom-section {
+        height: 100px;
+        background: linear-gradient( 134deg, #1d262f 0%, #1d262f 100%);
+        box-shadow: 0px 8px 16px 0px rgba(184,192,209,0.6);
+        .bottom-common-width {
+          margin: 0 50px;
+          height: 100%;
+          .flex-layout {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .factory-name {
+              height: 33px;
+              font-family: PingFangSC, PingFang SC;
+              font-weight: 500;
+              font-size: 24px;
+              color: #FFFFFF;
+              line-height: 33px;
+              text-align: justify;
+              font-style: normal;
+            }
+            .generator-time {
+              height: 33px;
+              font-family: PingFangSC, PingFang SC;
+              font-weight: 500;
+              font-size: 24px;
+              color: #FFFFFF;
+              line-height: 33px;
+              text-align: justify;
+              font-style: normal;
+            }
+          }
+        }
+      }
+      // 各模块
+      .content-section {
+        .stock-in-out-bar-component,
+        .agv-work-line-component,
+        .eqp-wait-bar-component,
+        .process-line-component {
+          height:568px;
+        }
+        .EconomicBenefitPart {
+          .eco-row {
+            display: flex;
+            justify-content: space-between;
+            &:last-of-type {
+              margin-top: 10px;
+            }
+          }
+        }
+        .eqp-param-config-img {
+          display: block;
+          border:none;
+          width: 100%;
+          height: 496px;
+        }
+      }
+    }
+  }
+}

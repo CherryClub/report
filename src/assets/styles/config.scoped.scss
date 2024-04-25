@@ -1,0 +1,104 @@
+@charset 'utf-8';
+.dash-config-container {
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  background: #F5F4F9;
+  .inner-layout-wrapper {
+    height: 100%;
+    .common-width {
+      width:1200px;
+      margin: 0 auto;
+      height:1080px;
+      overflow: hidden;
+      .vertical-flex {
+        height:1080px;
+        display: flex;
+        flex-direction: column;
+        .top {
+          padding: 24px 0 16px;
+          .top-span {
+            display: flex;
+            height: 22px;
+            font-family: PingFangSC, PingFang SC;
+            font-weight: 500;
+            font-size: 16px;
+            color: #000000;
+            line-height: 22px;
+            text-align: justify;
+            font-style: normal;
+            .theme-check-group {
+              margin-left: 16px;
+            }
+          }
+          
+        }
+        .main {
+          flex: 1;
+          width: 100%;
+          height: 930px;
+          overflow: auto;
+          background: #FFFFFF;
+          .tab-cards {
+            .tab-card-cell {
+              padding: 32px 0;
+              .cw {
+                padding: 0 16px;
+              }
+              .check-notice-tip {
+                margin-left: 6px;
+              }
+              .remark-icon {
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                font-size: 12px;
+                border-radius: 50%;
+                border: 1px solid #ccc;
+                color: #ccc;
+                text-align: center;
+              }
+              .section-visible-switch-part {
+                .section-title {
+                  margin-left: 8px;
+                }
+              }
+              .tables-columns-visible-check-group-list-wrapper {
+                .tables-columns-visible-check-group-list-item {
+                  .part-visible-switch {
+                  }
+                  .part-table-column-visible-check-group {
+                    .col-visible-checkbox-group {
+                      .col-visible-checkbox-button {
+                        margin-top: 20px;
+                      }
+                    }
+                  }
+                }
+              }
+              .table-columns-visible-check-group {
+                .part-visible-switch {
+
+                }
+                .part-table-column-visible-check-group {
+                  .col-visible-checkbox-group {
+                    .col-visible-checkbox-button {
+                      margin-top: 20px;
+                    }
+                  }
+                }
+              }
+              .eqp-param-config-img {
+                width: 100%;
+              }
+            }
+          }
+        }
+        .bottom {
+          padding: 24px 0 32px;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
